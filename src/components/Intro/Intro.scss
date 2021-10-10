@@ -1,2 +1,19 @@
 .Intro {
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	height: 100vh;
+	background-color: blanchedalmond;
+}
+
+.intro-left {
+	flex: 1;
+}
+
+.intro-Left-Wrapper {
+	padding: 50px;
+}
+
+.intro-right {
+	flex: 1;
 }

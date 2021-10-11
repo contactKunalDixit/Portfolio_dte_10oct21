@@ -16,13 +16,6 @@
 	position: relative;
 }
 
-.about-card.shadowBg {
-	position: absolute;
-	top: 50px;
-	left: 50px;
-	background-color: #333;
-}
-
 .about-card {
 	width: 60%;
 	height: 70vh;
@@ -30,6 +23,14 @@
 	position: relative;
 	overflow: hidden;
 }
+
+.about-card.shadowBg {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	background-color: #333;
+}
+
 .a-img {
 	object-fit: cover;
 	width: 100%;

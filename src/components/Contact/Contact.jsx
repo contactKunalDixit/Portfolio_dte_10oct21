@@ -1,10 +1,32 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './contact.scss';
 import Phone from '../../img/phone.png';
 import Email from '../../img/email.png';
 import Address from '../../img/address.png';
 
+import emailjs from 'emailjs-com';
+
 const Contact = () => {
+	const formRef = useRef();
+
+	const handleSubmit = (e) => {
+		emailjs
+			.sendForm(
+				'service_er1vjte',
+				'template_6d3ok29',
+				formRef.current,
+				'user_5UhBgwKxfFIc5mp67CFyC'
+			)
+			.then(
+				(result) => {
+					console.log(result.text);
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
+	};
+
 	return (
 		<div className='Contact'>
 			<div className='contact-bg'></div>
@@ -17,7 +39,7 @@ const Contact = () => {
 						</div>
 						<div className='c-info-item'>
 							<img src={Email} alt='' className='c-icon' />
-							contactkunaldixit@gmail.com
+							contactdixitkunal@gmail.com
 						</div>
 					</div>
 				</div>
@@ -26,16 +48,12 @@ const Contact = () => {
 						<b>What's your story?</b> Get in touch. Always available for
 						freelancing if the right project comes along
 					</p>
-					<form>
+					<form ref={formRef} onSubmit={handleSubmit}>
 						<input type='text' placeholder='Name' name='user_name' />
 						<input type='text' placeholder='Subject' name='user_subject' />{' '}
 						<input type='text' placeholder='Email' name='user_email' />
-						<textarea
-							placeholder='Message'
-							name='message'
-							id=''
-							rows='5'
-						></textarea>
+						<textarea placeholder='Message' name='message' rows='5'></textarea>
+						<button>Submit</button>
 					</form>
 				</div>
 			</div>

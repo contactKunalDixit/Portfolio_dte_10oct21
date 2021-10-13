@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import './contact.scss';
 import Phone from '../../img/phone.png';
 import Email from '../../img/email.png';
@@ -7,9 +7,13 @@ import Address from '../../img/address.png';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
+	const [values, setvalues] = useState({});
+	const [done, setDone] = useState(false);
+
 	const formRef = useRef();
 
 	const handleSubmit = (e) => {
+		e.preventDefault();
 		emailjs
 			.sendForm(
 				'service_er1vjte',
@@ -20,11 +24,16 @@ const Contact = () => {
 			.then(
 				(result) => {
 					console.log(result.text);
+					setDone(true);
 				},
 				(error) => {
 					console.log(error.text);
 				}
 			);
+	};
+
+	const handleResetValues = (e) => {
+		console.log(e);
 	};
 
 	return (
@@ -50,10 +59,17 @@ const Contact = () => {
 					</p>
 					<form ref={formRef} onSubmit={handleSubmit}>
 						<input type='text' placeholder='Name' name='user_name' />
-						<input type='text' placeholder='Subject' name='user_subject' />{' '}
+						<input type='text' placeholder='Subject' name='user_subject' />
 						<input type='text' placeholder='Email' name='user_email' />
 						<textarea placeholder='Message' name='message' rows='5'></textarea>
-						<button>Submit</button>
+						<button onClick={handleResetValues}>Submit</button>
+						{done && (
+							<p>
+								Thank you! Please ensure to check your "Promotion" and "Social"
+								mail folders for an acknowledgement from our end. We'll be in
+								touch soon
+							</p>
+						)}
 					</form>
 				</div>
 			</div>

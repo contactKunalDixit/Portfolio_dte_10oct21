@@ -7,7 +7,11 @@ import Address from '../../img/address.png';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
-	const [values, setvalues] = useState({});
+	const [nameValue, setNameValue] = useState('');
+	const [subjectValue, setSubjectValue] = useState('');
+	const [emailValue, setEmailValue] = useState('');
+	const [messageValue, setMessageValue] = useState('');
+
 	const [done, setDone] = useState(false);
 
 	const formRef = useRef();
@@ -30,10 +34,10 @@ const Contact = () => {
 					console.log(error.text);
 				}
 			);
-	};
-
-	const handleResetValues = (e) => {
-		console.log(e);
+		setNameValue('');
+		setSubjectValue('');
+		setEmailValue('');
+		setMessageValue('');
 	};
 
 	return (
@@ -58,16 +62,40 @@ const Contact = () => {
 						freelancing if the right project comes along
 					</p>
 					<form ref={formRef} onSubmit={handleSubmit}>
-						<input type='text' placeholder='Name' name='user_name' />
-						<input type='text' placeholder='Subject' name='user_subject' />
-						<input type='text' placeholder='Email' name='user_email' />
-						<textarea placeholder='Message' name='message' rows='5'></textarea>
-						<button onClick={handleResetValues}>Submit</button>
+						<input
+							type='text'
+							placeholder='Name'
+							name='user_name'
+							value={nameValue}
+							onChange={(e) => setNameValue(e.target.value)}
+						/>
+						<input
+							type='text'
+							placeholder='Subject'
+							name='user_subject'
+							value={subjectValue}
+							onChange={(e) => setSubjectValue(e.target.value)}
+						/>
+						<input
+							type='text'
+							placeholder='Email'
+							name='user_email'
+							value={emailValue}
+							onChange={(e) => setEmailValue(e.target.value)}
+						/>
+						<textarea
+							placeholder='Message'
+							name='message'
+							value={messageValue}
+							rows='5'
+							onChange={(e) => setMessageValue(e.target.value)}
+						></textarea>
+						<button>Submit</button>
 						{done && (
-							<p>
+							<p style={{ marginTop: '20px' }}>
 								Thank you! Please ensure to check your "Promotion" and "Social"
 								mail folders for an acknowledgement from our end. We'll be in
-								touch soon
+								touch soon.
 							</p>
 						)}
 					</form>

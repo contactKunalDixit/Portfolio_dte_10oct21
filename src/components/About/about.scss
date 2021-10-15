@@ -77,3 +77,44 @@
 	color: #555;
 	margin-bottom: 10px;
 }
+
+@media screen and (max-width: 480px) {
+	.About {
+		padding: 10px;
+		flex-direction: column;
+	}
+	.about-left {
+		height: 50%;
+	}
+	.about-card {
+		height: 40vh;
+		width: 100%;
+	}
+
+	.about-card.shadowBg {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+	.about-right {
+		height: 50%;
+		padding: 10px;
+	}
+	.a-award-img {
+		width: 60px;
+		height: 60px;
+		border-radius: 20px;
+	}
+	.a-title {
+		font-weight: 400;
+		font-size: 48px;
+		text-align: center;
+	}
+	.a-sub {
+		margin: 10px 0px;
+		text-align: center;
+	}
+	.a-desc {
+		text-align: center;
+	}
+}

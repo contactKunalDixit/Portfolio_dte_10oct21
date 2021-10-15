@@ -54,6 +54,10 @@ const Contact = () => {
 							<img src={Email} alt='' className='c-icon' />
 							contactdixitkunal@gmail.com
 						</div>
+						<div className='c-info-item'>
+							<img src={Address} alt='' className='c-icon' />
+							Unit-1459 #3, Bedok Reservoir Road, Singapore - 470138
+						</div>
 					</div>
 				</div>
 				<div className='c-Right'>
@@ -68,6 +72,7 @@ const Contact = () => {
 							name='user_name'
 							value={nameValue}
 							onChange={(e) => setNameValue(e.target.value)}
+							onClick={(e) => setDone(false)}
 						/>
 						<input
 							type='text'

@@ -35,3 +35,10 @@
 		transform: translateY(-100%);
 	}
 }
+
+@media screen and (max-width: 480px) {
+	.Product {
+		width: 40%;
+		height: 20vh;
+	}
+}

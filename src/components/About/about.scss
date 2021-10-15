@@ -60,6 +60,9 @@
 .a-desc {
 	font-weight: 300;
 }
+.a-desc.smScreen {
+	display: none;
+}
 
 .a-award {
 	margin-top: 50px;
@@ -116,5 +119,11 @@
 	}
 	.a-desc {
 		text-align: center;
+	}
+	.a-desc.LgScreen {
+		display: none;
+	}
+	.a-desc.smScreen {
+		display: block;
 	}
 }

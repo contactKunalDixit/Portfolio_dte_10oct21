@@ -8,7 +8,7 @@ export const productsData = [
 	},
 	{
 		id: 2,
-		img: '/Users/kunaldixit/Documents/Web_Programming/Web Programming and Projects/Portfolio_dte_10oct21/src/img/screencapture-localhost-3001-2021-10-12-01_22_56.png',
+		img: '/Users/kunaldixit/Documents/Web_Programming/Web Programming and Projects/Portfolio_dte_10oct21/src/img/screencapture-SPA.png',
 		link: 'https://contactkunaldixit.github.io/portfolio.github.io/',
 	},
 	{

@@ -1,6 +1,6 @@
 import React from 'react';
 import './products.scss';
-import Pic from '../../img/screencapture-localhost-3001-2021-10-12-01_22_56.png';
+import Pic from '../../img/screencapture-SPA.png';
 
 const Products = (props) => {
 	return (

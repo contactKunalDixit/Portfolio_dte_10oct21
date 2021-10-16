@@ -45,7 +45,8 @@ const Contact = () => {
 			<div className='contact-bg'></div>
 			<div className='contact-Wrapper'>
 				<div className='c-Left'>
-					<h1 className='c-title'>Let's discuss your Project</h1>
+					<h1 className='c-title LgScreen'>Let's discuss your Project</h1>
+					<h1 className='c-title smScreen'>Let's Connect</h1>
 					<div className='c-info'>
 						<div className='c-info-item'>
 							<img src={Phone} alt='' className='c-icon' /> +65 90301206
@@ -62,8 +63,11 @@ const Contact = () => {
 				</div>
 				<div className='c-Right'>
 					<p className='c-desc'>
-						<b>What's your story?</b> Get in touch. Always available for
-						freelancing if the right project comes along
+						<b>
+							<span id='Q-title'>What's your story?</span>
+						</b>
+						Get in touch. Always available for freelancing if the right project
+						comes along
 					</p>
 					<form ref={formRef} onSubmit={handleSubmit}>
 						<input

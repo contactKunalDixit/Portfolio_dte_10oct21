@@ -14,8 +14,8 @@ function App() {
 		<div
 			className='App'
 			style={{
-				backgroundColor: darkMode ? '#222' : 'white',
-				color: darkMode && 'white',
+				backgroundColor: darkMode ? '#121212' : 'white',
+				color: darkMode && '#ade8f4',
 			}}
 		>
 			<Toggle />

@@ -3,14 +3,26 @@
 	padding: 0px;
 	display: flex;
 	height: 100vh;
+	position: relative;
 }
 
+.intro-bground {
+	clip-path: polygon(72% 0, 100% 0, 100% 100%, 33% 100%);
+
+	background-color: #9bf6ff;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
 .intro-left {
 	flex: 1;
 	display: flex;
 	// flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 }
 
 .intro-Left-Wrapper {
@@ -60,7 +72,7 @@
 .i-title-Item {
 	height: 50px;
 	font-size: 30px;
-	font-weight: bold;
+	font-weight: 500;
 	color: rgb(49, 49, 145);
 	display: flex;
 	align-items: center;
@@ -88,28 +100,6 @@
 	align-items: center;
 }
 
-.intro-bg1 {
-	clip-path: polygon(39% 0, 100% 0%, 100% 100%, 0 100%);
-	clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
-
-	background-color: rgb(135, 212, 84);
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	right: 0;
-}
-
-// .intro-bg2 {
-// 	clip-path: polygon(100% 66%, 0% 100%, 100% 100%);
-
-// 	background-color: rgb(217, 224, 220);
-// 	width: 100%;
-// 	height: 100%;
-// 	position: absolute;
-// 	bottom: 0;
-// 	right: 0;
-// }
 .intro-img {
 	width: 80%;
 	height: 100%;
@@ -120,7 +110,7 @@
 
 @media screen and (max-width: 480px) {
 	.Intro {
-		flex-direction: column;
+		flex-direction: column-reverse;
 	}
 
 	.intro-Left-Wrapper {

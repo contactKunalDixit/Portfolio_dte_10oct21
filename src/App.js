@@ -15,7 +15,7 @@ function App() {
 			className='App'
 			style={{
 				backgroundColor: darkMode ? '#121212' : 'white',
-				color: darkMode && '#ade8f4',
+				color: darkMode && '#ccebff',
 			}}
 		>
 			<Toggle />

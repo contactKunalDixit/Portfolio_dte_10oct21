@@ -3,8 +3,9 @@ import './contact.scss';
 import Phone from '../../img/phone.png';
 import Email from '../../img/email.png';
 import Address from '../../img/address.png';
-
 import emailjs from 'emailjs-com';
+import { useContext } from 'react';
+import { ThemeContext } from '../../context';
 
 const Contact = () => {
 	const [nameValue, setNameValue] = useState('');
@@ -15,6 +16,8 @@ const Contact = () => {
 	const [done, setDone] = useState(false);
 
 	const formRef = useRef();
+	const theme = useContext(ThemeContext);
+	const darkMode = theme.state.darkMode;
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -42,7 +45,10 @@ const Contact = () => {
 
 	return (
 		<div className='Contact'>
-			<div className='contact-bg'></div>
+			<div
+				className='contact-bg'
+				style={{ backgroundColor: darkMode ? '#ffd6a539' : '#ffd6a5' }}
+			></div>
 			<div className='contact-Wrapper'>
 				<div className='c-Left'>
 					<h1 className='c-title LgScreen'>Let's discuss your Project</h1>
@@ -64,7 +70,7 @@ const Contact = () => {
 				<div className='c-Right'>
 					<p className='c-desc'>
 						<b>
-							<span id='Q-title'>What's your story?</span>
+							<span id='Q-title'>What's your story ? </span>
 						</b>
 						Get in touch. Always available for freelancing if the right project
 						comes along

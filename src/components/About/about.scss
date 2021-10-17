@@ -5,6 +5,18 @@
 	display: flex;
 	align-items: center;
 	overflow: hidden;
+	position: relative;
+}
+
+.about-bground {
+	clip-path: polygon(0 0%, 33% 0, 33% 100%, 0% 100%);
+
+	background-color: #caffbf;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 .about-left {
@@ -14,6 +26,7 @@
 	justify-content: center;
 	height: 100%;
 	position: relative;
+	z-index: 1;
 }
 
 .about-card {
@@ -40,6 +53,7 @@
 .about-right {
 	flex: 1;
 	padding: 50px;
+	z-index: 1;
 }
 
 .a-award-img {
@@ -83,11 +97,11 @@
 
 @media screen and (max-width: 480px) {
 	.About {
-		padding: 10px;
+		padding: 0px 10px 0 10px;
 		flex-direction: column;
 	}
 	.about-left {
-		height: 50%;
+		height: 50vh;
 	}
 	.about-card {
 		height: 40vh;
@@ -100,8 +114,8 @@
 		right: 20px;
 	}
 	.about-right {
-		height: 50%;
-		padding: 10px;
+		height: 50vh;
+		padding: 10px 10px 0px 10px;
 	}
 	.a-award-img {
 		width: 60px;

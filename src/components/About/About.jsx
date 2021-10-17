@@ -2,9 +2,17 @@ import './about.scss';
 import React from 'react';
 import aboutImg from '../../img/KunalCartoonPotrait.jpg';
 import Award from '../../img/award.png';
+import { useContext } from 'react';
+import { ThemeContext } from '../../context';
 const About = () => {
+	const theme = useContext(ThemeContext);
+	const darkMode = theme.state.darkMode;
 	return (
 		<div className='About'>
+			<div
+				className='about-bground'
+				style={{ backgroundColor: darkMode ? '#caffbf42' : '#caffbf' }}
+			></div>
 			<div className='about-left'>
 				<div className='about-card shadowBg'>
 					<img src={aboutImg} alt='shadow' className='a-img' />
@@ -32,7 +40,12 @@ const About = () => {
 				<div className='a-award'>
 					<img src={Award} alt='' className='a-award-img' />
 					<div className='a-award-texts'>
-						<h4 className='a-award-title'>International Design Awards 2021</h4>
+						<h4
+							className='a-award-title'
+							style={{ color: darkMode ? '#fdffb6' : '#555' }}
+						>
+							International Design Awards 2021
+						</h4>
 						<p className='a-award-desc'>
 							Nemo enim ipsam voluptatem quia voluptas sit aspernatur autodit
 							and fugit.

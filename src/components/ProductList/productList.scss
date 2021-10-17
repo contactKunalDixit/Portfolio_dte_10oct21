@@ -1,24 +1,51 @@
 .pl {
 	// height: 100vh; Work on this: define the height and moderate the child elements for perfect fit
-	padding: 50px 100px;
+
+	// display: flex;
+	// flex-direction: column;
+	// align-items: center;
+	// text-align: center;
+	// justify-content: flex-start;
+	// width: 100vw;
+	// height: 100vh;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+.pl-bground {
+	clip-path: polygon(0 0, 33% 0, 69% 100%, 0% 100%);
+	background-color: #fdffb6;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.pl-wrapper {
+	height: 100%;
+	overflow: hidden;
+	z-index: 2;
+	padding: 15px 100px 0px 100px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	overflow: hidden;
-	height: 100vh;
+	justify-content: flex-start;
 }
 
 .pl-text {
 	width: 65%;
+	z-index: 2;
 }
 
 .pl-title {
 	font-size: 60px;
 	font-weight: 500;
+	z-index: 2;
 }
 .pl-desc {
 	margin: 20px 0;
+	z-index: 2;
 }
 
 .pl-List {
@@ -26,11 +53,16 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	z-index: 2;
 }
 
 @media screen and (max-width: 480px) {
 	.pl {
-		padding: 10px;
+		// padding: 10px;
+	}
+	.pl-wrapper {
+		z-index: 2;
+		padding: 0px 50px 0px 50px;
 	}
 	.pl-text {
 		width: 100%;

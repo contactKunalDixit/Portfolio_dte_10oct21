@@ -22,32 +22,32 @@ const About = () => {
 				</div>
 			</div>
 			<div className='about-right'>
-				<h1 className='a-title'>About Kunal</h1>
+				<h1 className='a-title'>About Me</h1>
 				<p className='a-sub'>
-					Kunal is a certified Web Developer, and a certified Master's in Global
+					I am a certified Web Developer, and a certified Master's in Global
 					Business Management and Business Economics.
 				</p>
 				<p className='a-desc LgScreen'>
-					Kunal has 15+ years of experience with well‐honed expertise and rich
+					I have 15+ years of experience with well‐honed expertise and rich
 					cross functional exposure to Customer Relationship Management and
 					retention, Direct Sales and Marketing, Project and process Management
 					in the SaaS and Information Technology enabled Services and
 					hospitality sector.
 					<br />
 					<br />
-					He brings in valuable experience of collaborating with Project
-					Management groups and creative teams and has contributed to various
+					I bring in valuable experience of collaborating with Project
+					Management groups and creative teams and have contributed to various
 					client projects.
 					<br />
 					<br />
-					In addition to enjoying being in web Development, He gets immense
+					In addition to enjoying being in web Development, I get immense
 					satisfaction in helping others discover and improve thier skillsets.
-					That's what has driven him to taste repeated success in the L&D
-					projects he has led & has been part of.
+					That's what has driven me to taste repeated success in the L&D
+					projects I have led & have been part of.
 				</p>
 
 				<p className='a-desc smScreen'>
-					Kunal has 15+ years of experience with rich cross functional exposure
+					i bring in 15+ years of experience with rich cross functional exposure
 					to Customer Relationship Management, Project and process Management in
 					the SaaS, ITeS and hospitality sector.
 				</p>
@@ -61,7 +61,7 @@ const About = () => {
 							Brandon Hall Awards 2021
 						</h4>
 						<p className='a-award-desc'>
-							Categories: Best Blended Learning and, Operational Excellence
+							Category: Best Blended Learning and, Operational Excellence
 						</p>
 					</div>
 				</div>

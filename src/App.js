@@ -16,6 +16,7 @@ function App() {
 			style={{
 				backgroundColor: darkMode ? '#121212' : 'white',
 				color: darkMode && '#ccebff',
+				overflow: 'hidden',
 			}}
 		>
 			<Toggle />

@@ -1,7 +1,7 @@
 import './about.scss';
 import React from 'react';
 import aboutImg from '../../img/KunalCartoonPotrait.jpg';
-import Award from '../../img/award.png';
+import Award from '../../img/Brandon-Hall-Excellence-Awards.jpeg';
 import { useContext } from 'react';
 import { ThemeContext } from '../../context';
 const About = () => {
@@ -22,20 +22,34 @@ const About = () => {
 				</div>
 			</div>
 			<div className='about-right'>
-				<h1 className='a-title'>About Me</h1>
+				<h1 className='a-title'>About Kunal</h1>
 				<p className='a-sub'>
-					It is a long established fact that a reader will be distracted by the
-					readable content.
+					Kunal is a certified Web Developer, and a certified Master's in Global
+					Business Management and Business Economics.
 				</p>
 				<p className='a-desc LgScreen'>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat duis aute irure dolor in reprehende.
+					Kunal has 15+ years of experience with well‐honed expertise and rich
+					cross functional exposure to Customer Relationship Management and
+					retention, Direct Sales and Marketing, Project and process Management
+					in the SaaS and Information Technology enabled Services and
+					hospitality sector.
+					<br />
+					<br />
+					He brings in valuable experience of collaborating with Project
+					Management groups and creative teams and has contributed to various
+					client projects.
+					<br />
+					<br />
+					In addition to enjoying being in web Development, He gets immense
+					satisfaction in helping others discover and improve thier skillsets.
+					That's what has driven him to taste repeated success in the L&D
+					projects he has led & has been part of.
 				</p>
+
 				<p className='a-desc smScreen'>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore
+					Kunal has 15+ years of experience with rich cross functional exposure
+					to Customer Relationship Management, Project and process Management in
+					the SaaS, ITeS and hospitality sector.
 				</p>
 				<div className='a-award'>
 					<img src={Award} alt='' className='a-award-img' />
@@ -44,11 +58,10 @@ const About = () => {
 							className='a-award-title'
 							style={{ color: darkMode ? '#fdffb6' : '#555' }}
 						>
-							International Design Awards 2021
+							Brandon Hall Awards 2021
 						</h4>
 						<p className='a-award-desc'>
-							Nemo enim ipsam voluptatem quia voluptas sit aspernatur autodit
-							and fugit.
+							Categories: Best Blended Learning and, Operational Excellence
 						</p>
 					</div>
 				</div>

@@ -16,11 +16,9 @@ const ProductList = () => {
 			></div>
 			<div className='pl-wrapper'>
 				<div className='pl-text'>
-					<h1 className='pl-title'>Create & Inspire</h1>
+					<h1 className='pl-title'>Work</h1>
 					<p className='pl-desc'>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-						doloremque rem dolores velit veniam, eum facere corporis nostrum
-						nisi perferendis?
+						Here is a glimpse of few of the projects that I've worked on...
 					</p>
 				</div>
 				<div className='pl-List'>

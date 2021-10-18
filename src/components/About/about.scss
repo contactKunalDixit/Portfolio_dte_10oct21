@@ -101,7 +101,7 @@
 
 @media screen and (max-width: 480px) {
 	.About {
-		padding: 0px 10px 0 10px;
+		// padding: 0px 10px 0 10px;
 		flex-direction: column;
 	}
 	.about-left {
@@ -147,6 +147,7 @@
 	}
 	.a-desc.smScreen {
 		display: block;
+		padding: 0 10px;
 	}
 	.a-award-texts {
 		width: 70%;

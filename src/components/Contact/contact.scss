@@ -4,6 +4,7 @@
 	position: relative;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .contact-bg {
@@ -21,6 +22,8 @@
 	padding: 50px;
 	display: flex;
 	z-index: 1;
+	align-items: center;
+	justify-content: center;
 }
 
 .c-Left {
@@ -58,6 +61,9 @@
 .c-desc {
 	font-weight: 200;
 }
+.c-desc.SmScreen {
+	display: none;
+}
 
 form {
 	margin-top: 20px;
@@ -91,6 +97,8 @@ button {
 }
 
 @media screen and (max-width: 480px) {
+	.Contact {
+	}
 	.contact-Wrapper {
 		flex-direction: column;
 		padding: 0px 50px;
@@ -112,7 +120,7 @@ button {
 		display: block;
 	}
 	.c-info {
-		margin: 20px 0;
+		margin: 15px 0;
 	}
 	.c-info-item {
 		display: flex;
@@ -121,11 +129,16 @@ button {
 		font-weight: 300;
 		width: 100%;
 	}
-	#Q-title {
+	.Q-title {
 		display: block;
 		text-align: center;
 	}
-	.c-desc {
+
+	.c-desc.LgScreen {
+		display: none;
+	}
+	.c-desc.SmScreen {
+		display: block;
 		text-align: center;
 	}
 	.c-Right {
@@ -134,16 +147,18 @@ button {
 
 	form {
 		display: flex;
-		flex-direction: column;
+		// flex-direction: column;
 		width: 100%;
 		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 	input {
 		width: 80%;
-		height: 30px;
+		height: 20px;
 	}
 	textarea {
-		width: 90%;
+		width: 80%;
 		margin: 10px 0px;
 		font-size: 14px;
 		padding-left: 10px;

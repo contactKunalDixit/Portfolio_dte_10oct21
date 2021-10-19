@@ -68,12 +68,18 @@ const Contact = () => {
 					</div>
 				</div>
 				<div className='c-Right'>
-					<p className='c-desc'>
+					<p className='c-desc LgScreen'>
 						<b>
-							<span id='Q-title'>What's your story ? </span>
+							<span className='Q-title'>What's your story ? </span>
 						</b>
 						Get in touch. Always available for freelancing if the right project
 						comes along
+					</p>
+					<p className='c-desc SmScreen'>
+						<b>
+							<span id='Q-title'>What's your story ? </span>
+							Get in touch..
+						</b>
 					</p>
 					<form ref={formRef} onSubmit={handleSubmit}>
 						<input

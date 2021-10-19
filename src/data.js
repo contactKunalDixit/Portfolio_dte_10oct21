@@ -1,32 +1,32 @@
 export const productsData = [
 	{
 		id: 1,
-		img: 'https://github.com/contactKunalDixit/Portfolio_dte_10oct21/blob/main/src/img/screencapture-SPA.png',
-		link: 'http://spa-website.webdevkunal.com/',
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-onlineShopping.png',
+		link: 'http://buybee.webdevkunal.com/',
 	},
 	{
 		id: 2,
-		img: '/Users/kunaldixit/Documents/Web_Programming/Web Programming and Projects/Portfolio_dte_10oct21/src/img/screencapture-SPA.png',
-		link: 'https://contactkunaldixit.github.io/portfolio.github.io/',
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-SPA.png',
+		link: 'http://spa-website.webdevkunal.com/',
 	},
 	{
 		id: 3,
-		img: 'Portfolio_dte_10oct21/src/img/screencapture-localhost-3001-2021-10-12-01_22_56.png',
-		link: 'https://contactkunaldixit.github.io/portfolio.github.io/',
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-SmartAnalytics-AdminDashboard.png',
+		link: 'http://admin-dashboard.webdevkunal.com/',
 	},
 	{
 		id: 4,
-		img: 'https://github.com/contactKunalDixit/Portfolio_dte_10oct21/blob/main/src/img/screencapture-localhost-3001-2021-10-12-01_22_56.png',
-		link: 'https://contactkunaldixit.github.io/portfolio.github.io/',
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-rellax-Page.png',
+		link: 'http://rellaxpage.webdevkunal.com/',
 	},
 	{
 		id: 5,
-		img: 'https://analyticsindiamag.com/wp-content/uploads/2020/10/7d744a684fe03ebc7e8de545f97739dd-1200x1200.jpg',
-		link: 'https://contactkunaldixit.github.io/portfolio.github.io/',
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-douxbakery-webdevkunal.png',
+		link: 'http://douxbakery.webdevkunal.com/',
 	},
 	{
 		id: 6,
-		img: 'https://analyticsindiamag.com/wp-content/uploads/2020/10/7d744a684fe03ebc7e8de545f97739dd-1200x1200.jpg',
-		link: 'https://contactkunaldixit.github.io/portfolio.github.io/',
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-ExpenseTracker.png',
+		link: 'http://expensetracker.webdevkunal.com/',
 	},
 ];

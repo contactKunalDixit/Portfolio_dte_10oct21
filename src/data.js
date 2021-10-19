@@ -1,10 +1,8 @@
-import Pic from './img/screencapture-localhost-3001-2021-10-12-01_22_56.png';
-
 export const productsData = [
 	{
 		id: 1,
-		img: { Pic },
-		link: 'https://contactkunaldixit.github.io/portfolio.github.io/',
+		img: 'https://github.com/contactKunalDixit/Portfolio_dte_10oct21/blob/main/src/img/screencapture-SPA.png',
+		link: 'http://spa-website.webdevkunal.com/',
 	},
 	{
 		id: 2,

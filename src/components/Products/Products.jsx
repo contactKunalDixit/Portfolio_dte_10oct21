@@ -1,6 +1,5 @@
 import React from 'react';
 import './products.scss';
-import Pic from '../../img/screencapture-SPA.png';
 
 const Products = (props) => {
 	return (
@@ -11,7 +10,7 @@ const Products = (props) => {
 				<div className='p-circle'></div>
 			</div>
 			<a href={props.link} target='_blank' className='p-aTag' rel='noreferrer'>
-				<img src={Pic} alt='' className='p-Img' />
+				<img src={props.img} alt='' className='p-Img' />
 			</a>
 		</div>
 	);

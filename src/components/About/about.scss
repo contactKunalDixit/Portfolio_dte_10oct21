@@ -21,7 +21,7 @@
 }
 
 .about-left {
-	flex: 1;
+	flex: 1 2;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -32,7 +32,8 @@
 
 .about-card {
 	width: 60%;
-	height: 70vh;
+	// height: 70vh;
+	height: 70%;
 	border-radius: 30px;
 	position: relative;
 	overflow: hidden;
@@ -52,7 +53,7 @@
 }
 
 .about-right {
-	flex: 1;
+	flex: 1 1;
 	padding: 50px;
 	z-index: 1;
 }
@@ -103,9 +104,15 @@
 	.About {
 		// padding: 0px 10px 0 10px;
 		flex-direction: column;
+		height: 100vh;
+		padding-top: 15px;
 	}
+	.about-bground {
+		height: 100%;
+	}
+
 	.about-left {
-		height: 50vh;
+		height: 30vh;
 	}
 	.about-card {
 		height: 40vh;
@@ -114,12 +121,12 @@
 
 	.about-card.shadowBg {
 		position: absolute;
-		top: 20px;
-		right: 20px;
+		top: -10px;
+		left: 30px;
 	}
 	.about-right {
-		height: 50vh;
-		padding: 10px 10px 0px 10px;
+		height: 70vh;
+		padding: 10px 10px 10px 10px;
 	}
 	.a-award-img {
 		width: 60px;
@@ -127,7 +134,7 @@
 		border-radius: 20px;
 	}
 	.a-award {
-		margin-top: 20px;
+		margin-top: 15px;
 		justify-content: space-evenly;
 	}
 	.a-title {

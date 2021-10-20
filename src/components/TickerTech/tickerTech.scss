@@ -1,0 +1,26 @@
+.images {
+	width: 90px;
+	height: 90px;
+	object-fit: cover;
+	padding: 0 15px;
+	border-radius: 10px;
+	// text-align: center;
+}
+
+.box {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	// 	// padding-right: 100px;
+}
+
+.boxText {
+	// display: inline;
+}
+
+.unit {
+	padding-right: 100px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}

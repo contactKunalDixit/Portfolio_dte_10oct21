@@ -4,6 +4,7 @@ import Products from '../Products/Products';
 import { productsData } from '../../data';
 import { useContext } from 'react';
 import { ThemeContext } from '../../context';
+import TickerTech from '../TickerTech/TickerTech';
 
 const ProductList = () => {
 	const theme = useContext(ThemeContext);
@@ -25,6 +26,9 @@ const ProductList = () => {
 					{productsData.map((item) => (
 						<Products key={item.id} img={item.img} link={item.link}></Products>
 					))}
+				</div>
+				<div className='pl-tickerTech'>
+					<TickerTech />
 				</div>
 			</div>
 		</div>

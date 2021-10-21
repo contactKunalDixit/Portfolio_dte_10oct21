@@ -5,6 +5,7 @@ import Contact from './components/Contact/Contact';
 import Toggle from './components/Toggle/Toggle';
 import { useContext } from 'react';
 import { ThemeContext } from './context';
+import Testimonials from './components/Testimonials/Testimonials';
 
 function App() {
 	const theme = useContext(ThemeContext);
@@ -23,6 +24,7 @@ function App() {
 			<Intro />
 			<About />
 			<ProductList />
+			<Testimonials />
 			<Contact />
 		</div>
 	);

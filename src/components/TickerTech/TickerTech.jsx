@@ -6,13 +6,21 @@ import { TechData } from '../../data';
 const TickerTech = () => {
 	return (
 		<div>
-			<Ticker speed={15} move={true} style={{ textAlign: 'center' }}>
+			<Ticker
+				speed={8}
+				move={true}
+				offset={'run-in'}
+				style={{
+					textAlign: 'center',
+				}}
+			>
 				{({ index }) => (
 					<>
-						<div className='box'>
+						<div className='boxDiv'>
+							<p className='boxDivText'>Tools:</p>
 							{TechData.map((item) => (
 								<>
-									<span className='box' id={item.id}>
+									<span className='boxSpan' id={item.id}>
 										<div className='unit'>
 											<img src={item.img} alt='' className='images'></img>
 											{/* <span className='boxText'>{item.text}</span> */}

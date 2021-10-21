@@ -34,22 +34,22 @@ export const productsData = [
 export const TechData = [
 	{
 		id: 1,
-		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/Tech-Images/Bootstrap.png',
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/Tech-Images/HTML5.png',
 		text: 'HTML',
 	},
 	{
 		id: 2,
-		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/Tech-Images/Bootstrap.png',
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/Tech-Images/css3-logo-png-transparent.png',
 		text: 'CSS',
 	},
 	{
 		id: 3,
-		img: 'https://mpng.subpng.com/20180824/ktx/kisspng-mysql-workbench-computer-icons-logo-portable-netwo-thezedt-tech-tips-and-random-thoughts-5b80352110ca84.1955496015351288650688.jpg',
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/Tech-Images/Javascript.png',
 		text: 'JavaScript',
 	},
 	{
 		id: 4,
-		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-SPA.png',
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/Tech-Images/sass-1-logo-png-transparent.png',
 		text: 'SASS',
 	},
 	{
@@ -59,22 +59,27 @@ export const TechData = [
 	},
 	{
 		id: 6,
-		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-SPA.png',
-		text: 'CSS',
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/Tech-Images/ReactJS.png',
+		text: 'React',
 	},
 	{
 		id: 7,
-		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-SPA.png',
-		text: 'CSS',
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/Tech-Images/github.png',
+		text: 'GitHub',
 	},
 	{
 		id: 8,
-		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-SPA.png',
-		text: 'CSS',
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/Tech-Images/mySql1.png',
+		text: 'mySQL',
 	},
 	{
 		id: 9,
-		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-SPA.png',
-		text: 'CSS',
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/Tech-Images/MongoDB-logo.png',
+		text: 'MongoDB',
+	},
+	{
+		id: 10,
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/Tech-Images/StyledComponents1.png',
+		text: 'StyledComponent',
 	},
 ];

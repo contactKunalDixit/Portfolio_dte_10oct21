@@ -1,17 +1,30 @@
 .images {
 	width: 90px;
-	height: 60px;
-	object-fit: cover;
+	height: 70px;
+	object-fit: scale-down;
 	padding: 0 15px;
-	border-radius: 10px;
-	// text-align: center;
+	border-radius: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.box {
+.boxDiv {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
 	// 	// padding-right: 100px;
+}
+
+.boxDivText {
+	font-size: 24px;
+	padding-left: 200px;
+	padding-right: 40px;
+}
+.boxSpan {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .boxText {
@@ -19,8 +32,8 @@
 }
 
 .unit {
-	padding-right: 100px;
+	padding-right: 50px;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
 }

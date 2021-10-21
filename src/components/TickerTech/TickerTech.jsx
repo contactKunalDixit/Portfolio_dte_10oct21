@@ -15,7 +15,7 @@ const TickerTech = () => {
 									<span className='box' id={item.id}>
 										<div className='unit'>
 											<img src={item.img} alt='' className='images'></img>
-											<span className='boxText'>{item.text}</span>
+											{/* <span className='boxText'>{item.text}</span> */}
 										</div>
 									</span>
 								</>

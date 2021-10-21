@@ -34,18 +34,18 @@ export const productsData = [
 export const TechData = [
 	{
 		id: 1,
-		img: 'https://img.favpng.com/0/15/21/sass-style-sheet-language-cascading-style-sheets-logo-png-favpng-JrFmbSL7eyDhrZFE7nWjmSTKL.jpg',
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/Tech-Images/Bootstrap.png',
 		text: 'HTML',
 	},
 	{
 		id: 2,
-		img: 'https://download.logo.wine/logo/MySQL/MySQL-Logo.wine.png',
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/Tech-Images/Bootstrap.png',
 		text: 'CSS',
 	},
 	{
 		id: 3,
 		img: 'https://mpng.subpng.com/20180824/ktx/kisspng-mysql-workbench-computer-icons-logo-portable-netwo-thezedt-tech-tips-and-random-thoughts-5b80352110ca84.1955496015351288650688.jpg',
-		text: 'CSS',
+		text: 'JavaScript',
 	},
 	{
 		id: 4,
@@ -54,8 +54,8 @@ export const TechData = [
 	},
 	{
 		id: 5,
-		img: 'https://raw.githubusercontent.com/contactKunalDixihttps://e7.pngegg.com/pngimages/72/936/png-clipart-sass-cascading-style-sheets-preprocessor-less-postcss-meng-miscellaneous-text-thumbnail.png',
-		text: 'CSS',
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/Tech-Images/Bootstrap.png',
+		text: 'Bootstrap',
 	},
 	{
 		id: 6,

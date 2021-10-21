@@ -17,7 +17,7 @@ const TickerTech = () => {
 				{({ index }) => (
 					<>
 						<div className='boxDiv'>
-							<p className='boxDivText'>Tools:</p>
+							<p className='boxDivText'>ToolKit:</p>
 							{TechData.map((item) => (
 								<>
 									<span className='boxSpan' id={item.id}>

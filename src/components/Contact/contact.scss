@@ -1,15 +1,14 @@
 .Contact {
-	height: 100vh;
 	width: 100vw;
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	height: 100vh;
 }
 
 .contact-bg {
 	clip-path: polygon(69% 0, 100% 0, 100% 100%, 69% 100%);
-
 	background-color: #ffd6a5;
 	width: 100vw;
 	height: 100vh;
@@ -24,17 +23,25 @@
 	z-index: 1;
 	align-items: center;
 	justify-content: center;
+	height: 100vh;
 }
 
 .c-Left {
-	flex: 1;
+	// flex: 1;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
 }
 .c-Right {
-	flex: 1;
+	// flex: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	width: 50%;
+	height: 100%;
 }
 
 .c-title {
@@ -101,11 +108,13 @@ button {
 	}
 	.contact-Wrapper {
 		flex-direction: column;
-		padding: 0px 50px;
-		height: 90vh;
+		padding: 10px 50px;
+		height: 100%;
 	}
 	.c-Left {
-		flex: 1;
+		height: 40%;
+		width: 100%;
+		overflow: hidden;
 	}
 	.c-title {
 		font-size: 42px;
@@ -128,6 +137,7 @@ button {
 		margin: 10px 0;
 		font-weight: 400;
 		width: 100%;
+		font-size: 14px;
 	}
 	.Q-title {
 		display: block;
@@ -140,9 +150,12 @@ button {
 	.c-desc.SmScreen {
 		display: block;
 		text-align: center;
+		font-size: 14px;
 	}
 	.c-Right {
-		flex: 1;
+		height: 60%;
+		width: 100%;
+		// overflow: auto;
 	}
 
 	form {
@@ -152,6 +165,9 @@ button {
 		align-items: center;
 		flex-wrap: wrap;
 		justify-content: center;
+		height: 80%;
+		overflow: auto;
+		margin-top: 15px;
 	}
 	input {
 		width: 80%;
@@ -165,12 +181,13 @@ button {
 	}
 	button {
 		border: none;
-		padding: 15px;
+		padding: 8px;
 		background-color: #59b256;
 		color: white;
 		font-weight: 500;
 		cursor: pointer;
 		margin: 0 auto;
 		display: block;
+		border-radius: 10%;
 	}
 }

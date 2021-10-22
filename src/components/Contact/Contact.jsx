@@ -108,15 +108,13 @@ const Contact = () => {
 							placeholder='Message'
 							name='message'
 							value={messageValue}
-							rows='5'
+							rows='4'
 							onChange={(e) => setMessageValue(e.target.value)}
 						></textarea>
 						<button>Submit</button>
 						{done && (
 							<p style={{ marginTop: '20px' }}>
-								Thank you! Please ensure to check your "Promotion" and "Social"
-								mail folders for an acknowledgement from our end. We'll be in
-								touch soon.
+								Thank you! We'll be in touch soon.
 							</p>
 						)}
 					</form>

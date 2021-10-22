@@ -29,6 +29,21 @@ export const productsData = [
 		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-ExpenseTracker.png',
 		link: 'http://expensetracker.webdevkunal.com/',
 	},
+	{
+		id: 7,
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-onlineShopping.png',
+		link: 'http://buybee.webdevkunal.com/',
+	},
+	{
+		id: 8,
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-SPA.png',
+		link: 'http://spa-website.webdevkunal.com/',
+	},
+	{
+		id: 9,
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/screencapture-SmartAnalytics-AdminDashboard.png',
+		link: 'http://admin-dashboard.webdevkunal.com/',
+	},
 ];
 
 export const TechData = [

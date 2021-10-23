@@ -1,29 +1,30 @@
 .Contact {
-	width: 100vw;
+	// width: 100vw;
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	// height: 100vh;
 }
 
 .contact-bg {
 	clip-path: polygon(69% 0, 100% 0, 100% 100%, 69% 100%);
 	background-color: #ffd6a5;
 	width: 100vw;
-	height: 100vh;
+	// height: 100vh;
+	height: 100%;
 	position: absolute;
 	top: 0;
 	right: 0;
 }
 
 .contact-Wrapper {
-	padding: 50px;
+	padding: 0 50px;
 	display: flex;
 	z-index: 1;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	height: 100%;
 }
 
 .c-Left {

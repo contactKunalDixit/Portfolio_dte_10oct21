@@ -2,9 +2,8 @@
 	margin: 0px;
 	padding: 0px;
 	display: flex;
-	height: 100vh;
 	position: relative;
-	width: 100vw;
+	// width: 100%;
 }
 
 .intro-bground {
@@ -12,7 +11,7 @@
 
 	background-color: #9bf6ff;
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
 	position: absolute;
 	top: 0;
 	right: 0;

@@ -10,7 +10,7 @@ const ProductList = () => {
 	const theme = useContext(ThemeContext);
 	const darkMode = theme.state.darkMode;
 	return (
-		<div className='pl' id='productList'>
+		<div className='pl'>
 			<div
 				className='pl-bground'
 				style={{ backgroundColor: darkMode ? '#023d8a9d' : '#fdffb6' }}

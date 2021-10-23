@@ -2,11 +2,10 @@ import Intro from './components/Intro/Intro';
 import About from './components/About/About';
 import ProductList from './components/ProductList/ProductList';
 import Contact from './components/Contact/Contact';
+import Toggle from './components/Toggle/Toggle';
 import { useContext } from 'react';
 import { ThemeContext } from './context';
-import './app.scss';
 import Testimonials from './components/Testimonials/Testimonials';
-import Navbar from './components/navbar/Navbar';
 
 function App() {
 	const theme = useContext(ThemeContext);
@@ -18,17 +17,15 @@ function App() {
 			style={{
 				backgroundColor: darkMode ? '#121212' : 'white',
 				color: darkMode && '#ccebff',
+				overflow: 'hidden',
 			}}
 		>
-			<Navbar></Navbar>
-
-			<div className='Sections'>
-				<Intro />
-				<About />
-				<ProductList />
-				{/* <Testimonials /> */}
-				<Contact />
-			</div>
+			<Toggle />
+			<Intro />
+			<About />
+			<ProductList />
+			<Testimonials />
+			<Contact />
 		</div>
 	);
 }

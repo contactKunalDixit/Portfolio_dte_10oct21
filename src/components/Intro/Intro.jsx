@@ -7,7 +7,7 @@ const Intro = () => {
 	const theme = useContext(ThemeContext);
 	const darkMode = theme.state.darkMode;
 	return (
-		<div className='Intro' id='intro'>
+		<div className='Intro'>
 			<div
 				className='intro-bground'
 				style={{ backgroundColor: darkMode ? '#18a0ac6f' : '#9bf6ff' }}

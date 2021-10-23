@@ -8,7 +8,7 @@ const About = () => {
 	const theme = useContext(ThemeContext);
 	const darkMode = theme.state.darkMode;
 	return (
-		<div className='About' id='about'>
+		<div className='About'>
 			<div
 				className='about-bground'
 				style={{ backgroundColor: darkMode ? '#caffbf42' : '#caffbf' }}
@@ -24,8 +24,8 @@ const About = () => {
 			<div className='about-right'>
 				<h1 className='a-title'>About Me</h1>
 				<p className='a-sub'>
-					I am a certified Web Developer, and hold Master certification in
-					Global Business Management and Business Economics.
+					I am a certified Web Developer, and a certified Master's in Global
+					Business Management and Business Economics.
 				</p>
 				<p className='a-desc LgScreen'>
 					I have 15+ years of experience with well‐honed expertise and rich
@@ -35,10 +35,15 @@ const About = () => {
 					hospitality sector.
 					<br />
 					<br />
+					I bring in valuable experience of collaborating with Project
+					Management groups and creative teams and have contributed to various
+					client projects.
+					<br />
+					<br />
 					In addition to enjoying being in web Development, I get immense
 					satisfaction in helping others discover and improve thier skillsets.
 					That's what has driven me to taste repeated success in the L&D
-					projects I have led or have been part of.
+					projects I have led & have been part of.
 				</p>
 
 				<p className='a-desc smScreen'>

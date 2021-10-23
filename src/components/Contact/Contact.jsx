@@ -44,7 +44,7 @@ const Contact = () => {
 	};
 
 	return (
-		<div className='Contact' id='contact'>
+		<div className='Contact'>
 			<div
 				className='contact-bg'
 				style={{ backgroundColor: darkMode ? '#ffd6a539' : '#ffd6a5' }}

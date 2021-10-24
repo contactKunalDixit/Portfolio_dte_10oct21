@@ -2,9 +2,9 @@
 	margin: 0px;
 	padding: 0px;
 	display: flex;
-	height: 100vh;
 	position: relative;
 	width: 100vw;
+	height: calc(100vh - 60px); /*Test*/
 }
 
 .intro-bground {
@@ -12,10 +12,11 @@
 
 	background-color: #9bf6ff;
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
 	position: absolute;
 	top: 0;
 	right: 0;
+	// height: calc(100vh - 60px); /*Test*/
 }
 .intro-left {
 	flex: 1;
@@ -24,6 +25,7 @@
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	height: 100%;
 }
 
 .intro-Left-Wrapper {

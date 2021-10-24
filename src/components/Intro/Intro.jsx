@@ -10,7 +10,9 @@ const Intro = () => {
 		<div className='Intro'>
 			<div
 				className='intro-bground'
-				style={{ backgroundColor: darkMode ? '#18a0ac6f' : '#9bf6ff' }}
+				style={{
+					backgroundColor: darkMode ? '#18a0ac6f' : '#9bf6ff',
+				}}
 			></div>
 			<div className='intro-left'>
 				<div className='intro-Left-Wrapper'>

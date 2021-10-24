@@ -11,7 +11,7 @@ const About = () => {
 		<div className='About'>
 			<div
 				className='about-bground'
-				style={{ backgroundColor: darkMode ? '#caffbf42' : '#caffbf' }}
+				style={{ backgroundColor: darkMode ? '#26491a42' : '#caffbf' }}
 			></div>
 			<div className='about-left'>
 				<div className='about-card shadowBg'>

@@ -1,9 +1,7 @@
 .navbar {
 	width: 100vw;
 	height: 60px;
-	background-color: transparent;
-	background-color: blue; /*Test*/
-	opacity: 0.3; /*Test*/
+	background-color: rgb(221, 219, 215);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -26,7 +24,7 @@
 	justify-content: flex-start;
 	align-items: center;
 
-	.logo {
+	.nav-logo {
 		display: flex;
 		width: 100%;
 		align-items: center;
@@ -39,6 +37,11 @@
 			align-items: center;
 			text-decoration: none;
 			color: black;
+			font-size: 20px;
+			transition: all 0.5s ease;
+			&:hover {
+				transform: scale(1.2, 1.2);
+			}
 		}
 	}
 }
@@ -55,8 +58,15 @@
 		align-items: center;
 		justify-content: space-evenly;
 		list-style-type: none;
+
 		.navbar-li {
 			text-decoration: none;
+			cursor: pointer;
+			transition: all 0.5s ease;
+			&:hover {
+				transform: scale(1.2, 1.2);
+			}
+
 			.navbar-li-a {
 				text-decoration: none;
 				color: black;

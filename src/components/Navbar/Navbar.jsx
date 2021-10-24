@@ -7,12 +7,12 @@ const Navbar = () => {
 		<div className='navbar'>
 			<div className='navbar-wrapper'>
 				<div className='navbar-left'>
-					<div className='logo'>
+					<div className='nav-logo'>
 						<a href='#intro'>
 							<MdImportantDevices
 								style={{ fontSize: '24px', margin: '0px 10px' }}
 							></MdImportantDevices>
-							<div className='logoTitle'>Kunal D.</div>
+							<div className='nav-logoTitle'>Kunal D.</div>
 						</a>
 					</div>
 				</div>

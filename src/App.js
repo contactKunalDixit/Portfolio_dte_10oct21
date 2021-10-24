@@ -6,6 +6,8 @@ import Toggle from './components/Toggle/Toggle';
 import { useContext } from 'react';
 import { ThemeContext } from './context';
 import Testimonials from './components/Testimonials/Testimonials';
+import Navbar from './components/Navbar/Navbar.jsx';
+import './app.scss';
 
 function App() {
 	const theme = useContext(ThemeContext);
@@ -17,15 +19,17 @@ function App() {
 			style={{
 				backgroundColor: darkMode ? '#121212' : 'white',
 				color: darkMode && '#ccebff',
-				overflow: 'hidden',
 			}}
 		>
-			<Toggle />
-			<Intro />
-			<About />
-			<ProductList />
-			<Testimonials />
-			<Contact />
+			<Navbar />
+
+			<div className='Sections'>
+				<Intro />
+				<About />
+				<ProductList />
+				<Testimonials />
+				<Contact />
+			</div>
 		</div>
 	);
 }

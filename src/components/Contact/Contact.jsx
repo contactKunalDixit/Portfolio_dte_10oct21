@@ -68,56 +68,58 @@ const Contact = () => {
 					</div>
 				</div>
 				<div className='c-Right'>
-					<p className='c-desc LgScreen'>
-						<b>
-							<span className='Q-title'>What's your story ? </span>
-						</b>
-						Get in touch. Always available for freelancing if the right project
-						comes along
-					</p>
-					<p className='c-desc SmScreen'>
-						<b>
-							<span id='Q-title'>What's your story ? </span>
-							Get in touch..
-						</b>
-					</p>
-					<form ref={formRef} onSubmit={handleSubmit}>
-						<input
-							type='text'
-							placeholder='Name'
-							name='user_name'
-							value={nameValue}
-							onChange={(e) => setNameValue(e.target.value)}
-							onClick={(e) => setDone(false)}
-						/>
-						<input
-							type='text'
-							placeholder='Subject'
-							name='user_subject'
-							value={subjectValue}
-							onChange={(e) => setSubjectValue(e.target.value)}
-						/>
-						<input
-							type='text'
-							placeholder='Email'
-							name='user_email'
-							value={emailValue}
-							onChange={(e) => setEmailValue(e.target.value)}
-						/>
-						<textarea
-							placeholder='Message'
-							name='message'
-							value={messageValue}
-							rows='4'
-							onChange={(e) => setMessageValue(e.target.value)}
-						></textarea>
-						<button>Submit</button>
-						{done && (
-							<p style={{ marginTop: '20px' }}>
-								Thank you! We'll be in touch soon.
-							</p>
-						)}
-					</form>
+					<div className='c-right-wrapper'>
+						<p className='c-desc LgScreen'>
+							<b>
+								<span className='Q-title'>What's your story ? </span>
+							</b>
+							Get in touch. Always available for freelancing if the right
+							project comes along
+						</p>
+						<p className='c-desc SmScreen'>
+							<b>
+								<span id='Q-title'>What's your story ? </span>
+								Get in touch..
+							</b>
+						</p>
+						<form ref={formRef} onSubmit={handleSubmit}>
+							<input
+								type='text'
+								placeholder='Name'
+								name='user_name'
+								value={nameValue}
+								onChange={(e) => setNameValue(e.target.value)}
+								onClick={(e) => setDone(false)}
+							/>
+							<input
+								type='text'
+								placeholder='Subject'
+								name='user_subject'
+								value={subjectValue}
+								onChange={(e) => setSubjectValue(e.target.value)}
+							/>
+							<input
+								type='text'
+								placeholder='Email'
+								name='user_email'
+								value={emailValue}
+								onChange={(e) => setEmailValue(e.target.value)}
+							/>
+							<textarea
+								placeholder='Message'
+								name='message'
+								value={messageValue}
+								rows='4'
+								onChange={(e) => setMessageValue(e.target.value)}
+							></textarea>
+							<button>Submit</button>
+							{done && (
+								<p style={{ marginTop: '20px' }}>
+									Thank you! We'll be in touch soon.
+								</p>
+							)}
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>

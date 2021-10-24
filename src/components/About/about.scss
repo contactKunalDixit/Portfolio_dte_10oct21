@@ -5,7 +5,7 @@
 	height: 100%;
 	display: flex;
 	align-items: center;
-	// overflow: hidden;
+	overflow: hidden;
 	position: relative;
 }
 
@@ -21,13 +21,14 @@
 }
 
 .about-left {
-	flex: 1 2;
+	flex: 1;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100%;
 	position: relative;
 	z-index: 1;
+	width: 50%;
 }
 
 .about-card {
@@ -53,9 +54,10 @@
 }
 
 .about-right {
-	flex: 1 1;
-	padding: 1s0px;
+	flex: 1;
+	padding: 10px;
 	z-index: 1;
+	width: 50%;
 }
 
 .a-award-img {

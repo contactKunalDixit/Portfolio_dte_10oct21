@@ -97,4 +97,9 @@ export const TechData = [
 		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/Tech-Images/StyledComponents1.png',
 		text: 'StyledComponent',
 	},
+	{
+		id: 11,
+		img: 'https://raw.githubusercontent.com/contactKunalDixit/Portfolio_dte_10oct21/main/src/img/Tech-Images/materialUi.png',
+		text: 'MaterialUI',
+	},
 ];

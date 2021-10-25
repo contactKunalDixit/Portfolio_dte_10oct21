@@ -7,7 +7,7 @@ const Intro = () => {
 	const theme = useContext(ThemeContext);
 	const darkMode = theme.state.darkMode;
 	return (
-		<div className='Intro'>
+		<div className='Intro' id='intro'>
 			<div
 				className='intro-bground'
 				style={{
@@ -60,14 +60,14 @@ const Intro = () => {
 				</div>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
-					height='24px'
+					height='30px'
 					viewBox='0 0 24 24'
-					width='24px'
+					width='30px'
 					fill={darkMode ? 'white' : '#313191'}
 					style={{
 						position: 'absolute',
-						width: '50px',
-						height: '50px',
+						width: '3.125rem',
+						height: '3.125rem',
 						bottom: '0',
 						color: darkMode ? 'white' : '#313191',
 					}}

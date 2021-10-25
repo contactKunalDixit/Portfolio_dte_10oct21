@@ -1,114 +1,102 @@
 .Intro {
-	margin: 0px;
-	padding: 0px;
+	margin: 0rem;
+	padding: 0rem;
 	display: flex;
 	position: relative;
 	width: 100vw;
-	height: calc(100vh - 60px); /*Test*/
-}
+	height: calc(100vh - 3.75rem);
 
-.intro-bground {
-	clip-path: polygon(72% 0, 100% 0, 100% 100%, 33% 100%);
+	.intro-bground {
+		clip-path: polygon(72% 0, 100% 0, 100% 100%, 33% 100%);
 
-	background-color: #9bf6ff;
-	width: 100vw;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	right: 0;
-	// height: calc(100vh - 60px); /*Test*/
-}
-.intro-left {
-	flex: 1;
-	display: flex;
-	// flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	height: 100%;
-}
+		background-color: #9bf6ff;
+		width: 100vw;
+		height: 100%;
+		position: absolute;
+		top: 0rem;
+		right: 0rem;
+		// height: calc(100vh - 60px); /*Test*/
+	}
+	.intro-left {
+		flex: 1;
+		display: flex;
+		// flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		height: 100%;
+		.intro-Left-Wrapper {
+			padding: 3.125rem;
+			height: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			.i-intro {
+				font-weight: 300;
+				font-size: 1.875em;
+			}
+			.i-name {
+				font-weight: 500;
+				font-size: 3.75em;
+			}
+			.i-title {
+				height: 3.125rem;
+				overflow: hidden;
+				.i-title-Wrapper {
+					/* This Wrapper has just been used for adding Animation effect*/
+					overflow: visible;
+					height: 100%;
+					animation: move 10s ease-in-out infinite alternate;
 
-.intro-Left-Wrapper {
-	padding: 50px;
-	height: 50%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-}
+					@keyframes move {
+						25% {
+							transform: translateY(-3.125rem);
+						}
+						50% {
+							transform: translateY(-6.25rem);
+						}
+						75% {
+							transform: translateY(-9.375rem);
+						}
+						100% {
+							transform: translateY(-12.5rem);
+						}
+					}
+					/* Since we have 4 elements in 'i-title-Item' which'll be animated, Leaving the 1st one intact, we are bifurcating the rest in 4 parts in terms of percentage*/
 
-.i-intro {
-	font-weight: 300;
-	font-size: 30px;
-}
-.i-name {
-	font-weight: 500;
-	font-size: 60px;
-}
-
-.i-title {
-	height: 50px;
-	overflow: hidden;
-}
-.i-title-Wrapper {
-	/* This Wrapper has just been used for adding Animation effect*/
-
-	height: 100%;
-	animation: move 10s ease-in-out infinite alternate;
-
-	@keyframes move {
-		25% {
-			transform: translateY(-50px);
-		}
-		50% {
-			transform: translateY(-100px);
-		}
-		75% {
-			transform: translateY(-150px);
-		}
-		100% {
-			transform: translateY(-200px);
+					.i-title-Item {
+						height: 3.125rem;
+						font-size: 1.875em;
+						font-weight: 500;
+						color: rgb(49, 49, 145);
+						display: flex;
+						align-items: center;
+						text-align: center;
+						justify-content: center;
+					}
+				}
+			}
+			.intro-desc {
+				text-align: center;
+			}
 		}
 	}
-	/* Since we have 4 elements in 'i-title-Item' which'll be animated, Leaving the 1st one intact, we are bifurcating the rest in 4 parts in terms of percentage*/
-}
-.i-title-Item {
-	height: 50px;
-	font-size: 30px;
-	font-weight: 500;
-	color: rgb(49, 49, 145);
-	display: flex;
-	align-items: center;
-	text-align: center;
-	justify-content: center;
-}
-
-.intro-desc {
-	text-align: center;
-}
-.i-scroll {
-	width: 30px;
-	height: 30px;
-	position: absolute;
-	bottom: 20px;
-	cursor: pointer;
-}
-
-.intro-right {
-	flex: 1;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.intro-img {
-	width: 80%;
-	height: 100%;
-	object-fit: contain;
-	position: absolute;
-	z-index: 1;
+	.intro-right {
+		flex: 1;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		.intro-img {
+			width: 80%;
+			height: 100%;
+			object-fit: contain;
+			position: absolute;
+			z-index: 1;
+		}
+	}
 }
 
 @media screen and (max-width: 480px) {

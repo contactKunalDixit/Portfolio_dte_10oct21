@@ -8,7 +8,7 @@ const About = () => {
 	const theme = useContext(ThemeContext);
 	const darkMode = theme.state.darkMode;
 	return (
-		<div className='About'>
+		<div className='About' id='about'>
 			<div
 				className='about-bground'
 				style={{ backgroundColor: darkMode ? '#26491a42' : '#caffbf' }}

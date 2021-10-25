@@ -9,7 +9,7 @@ const Products = (props) => {
 				<div className='p-circle'></div>
 				<div className='p-circle'></div>
 			</div>
-			<a href={props.link} target='_blank' className='p-aTag' rel='noreferrer'>
+			<a href={props.link} target='_blank' className='p-Tag' rel='noreferrer'>
 				<img src={props.img} alt='' className='p-Img' />
 			</a>
 		</div>

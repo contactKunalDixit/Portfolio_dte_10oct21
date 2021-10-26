@@ -21,7 +21,7 @@ function App() {
 				color: darkMode && '#ccebff',
 			}}
 		>
-			<Navbar />
+			{/* <Navbar /> */}
 
 			<div className='Sections'>
 				<Intro />

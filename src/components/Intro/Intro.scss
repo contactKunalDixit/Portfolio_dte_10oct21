@@ -99,22 +99,151 @@
 	}
 }
 
+// ******Media Queries ******
+
+//1 max-width:480
 @media screen and (max-width: 480px) {
+	html {
+		font-size: 14px;
+	}
 	.Intro {
 		flex-direction: column-reverse;
+		.intro-left {
+			height: 100%;
+			.intro-Left-Wrapper {
+				padding: 0 10px;
+				align-items: center;
+				text-align: center;
+				height: 100%;
+				justify-content: space-evenly;
+				.intro-desc {
+					display: none;
+				}
+			}
+		}
 	}
+}
 
-	.intro-Left-Wrapper {
-		padding: 10px;
-		align-items: center;
-		text-align: center;
-		height: 100%;
-		justify-content: space-evenly;
+//3 max-width:768
+@media screen and (max-width: 768px) and (min-width: 481px) {
+	html {
+		font-size: 16px;
 	}
+	.Intro {
+		flex-direction: column-reverse;
+		.intro-left {
+			height: 100%;
+			flex: 2;
+			.intro-Left-Wrapper {
+				padding: 0 10px;
+				align-items: center;
+				text-align: center;
+				height: 100%;
+				justify-content: space-evenly;
+				.intro-desc {
+					display: none;
+				}
+			}
+		}
+		.intro-right {
+			flex: 1.5;
+		}
+	}
+}
 
-	.intro-desc {
-		display: none;
+//4 max-width:1024px
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+	html {
+		font-size: 20px;
 	}
-	.i-title-Item {
+	.Intro {
+		.intro-left {
+			height: 100%;
+			flex: 2;
+			.intro-Left-Wrapper {
+				padding: 0 10px;
+				align-items: center;
+				text-align: center;
+				height: 70%;
+				justify-content: space-evenly;
+			}
+		}
+		.intro-right {
+			flex: 1.5;
+		}
+	}
+}
+
+// max-width: 1200 n Potrait
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
+	html {
+		font-size: 20px;
+	}
+	.Intro {
+		.intro-left {
+			height: 100%;
+			flex: 1;
+			.intro-Left-Wrapper {
+				padding: 0 50px;
+				align-items: center;
+				text-align: center;
+				height: 70%;
+				justify-content: space-evenly;
+				.intro-desc {
+					// display: none;
+				}
+			}
+		}
+		.intro-right {
+			flex: 1;
+		}
+	}
+}
+
+// // max-width: 1200 n MORE n Potrait
+@media screen and (min-width: 1201px) {
+	html {
+		font-size: 22px;
+	}
+	.Intro {
+		.intro-left {
+			height: 100%;
+			flex: 1;
+			.intro-Left-Wrapper {
+				padding: 0 50px;
+				align-items: center;
+				text-align: center;
+				height: 70%;
+				justify-content: space-evenly;
+				.intro-desc {
+					// display: none;
+				}
+			}
+		}
+		.intro-right {
+			flex: 1;
+		}
+	}
+}
+
+@media screen and (min-width: 1450px) {
+	html {
+		font-size: 30px;
+	}
+	.Intro {
+		.intro-left {
+			height: 100%;
+			flex: 1;
+			.intro-Left-Wrapper {
+				padding: 0 50px;
+				align-items: center;
+				text-align: center;
+				height: 80%;
+				justify-content: space-evenly;
+			}
+		}
+		.intro-right {
+			flex: 1;
+		}
 	}
 }
